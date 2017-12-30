@@ -1,0 +1,47 @@
+md-content {
+  top: 10%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #6C7A89;
+}
+
+#get-quote{
+  font-weight: bold;
+  
+}
+#tweet-button{
+  display: none;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.quote{
+  padding: 0 35px;
+}
+.quote-icons{
+  font-size: 28px;
+  color: #0288D1;
+}
+.fa-quote-right{
+  float: right;
+}
+.no-tweet{
+  font-weight: bold;
+  color: #FF5722;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.twitter-share-button{
+  display: none;
+}
+@media (max-width: 768px){
+  md-content{
+  width: 100%;
+  top: 0;
+  }
+}

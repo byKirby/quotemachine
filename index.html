@@ -1,0 +1,59 @@
+<!-- Angular Material style sheet -->
+<html ng-app="QuoteApp">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc5/angular-material.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<title>Quote Machine</title>
+
+<body ng-cloak>
+  <md-content>
+    <md-toolbar class="">
+      <div class="md-toolbar-tools">
+        <h2>
+          <span>Quote Machine</span>
+        </h2>
+        <span flex></span>
+        <md-button id="quote-button" class="md-raised md-accent">
+          <span id="get-quote">Get Quote</span>
+        </md-button>
+      </div>
+      <!-- End of toolbar -->
+    </md-toolbar>
+    <md-card>
+      <md-card-content>
+        <div class="quote-holder">
+          <div class="quote-icons">
+            <i class="fa fa-quote-left"></i>
+            <i class="fa fa-quote-right"></i>
+          </div>
+          <div class="quote"></div>
+          <md-card-title>
+            <md-card-title-text>
+              <!--Insert author from quote -->
+              <div class="author md-headline"></div>
+              <!-- Either show the button or show the error text -->
+              <md-button id="tweet-button" class="md-fab md-accent">
+                <i class="fa fa-twitter"></i>
+              </md-button>
+              <span class="no-tweet">Sorry! This quote is too long to tweet.</span>
+            </md-card-title-text>
+          </md-card-title>
+        </div>
+      </md-card-content>
+    </md-card>
+  </md-content>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc5/angular-material.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+
+</html>
