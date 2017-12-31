@@ -18,7 +18,13 @@ $(document).ready(function () {
           $('.quote').html(post.content)
           $('.author').html('--' + post.title)
           $('#get-quote').text('Get a New Quote')
-          $('#tweet-button').show()
+          if (post.content.length < 280) {
+            $('#tweet-button').show()
+            $('.no-tweet').hide()
+          } else {
+            $('#tweet-button').hide()
+            $('.no-tweet').show()
+          }
         })
         $('.quote-holder').slideDown()
       },
